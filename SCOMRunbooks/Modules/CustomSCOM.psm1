@@ -24,8 +24,10 @@ function Remove-cSCOMObject {
 	cause a lot of problems if used incorrectly! You must see this as a (supported) last resort, and try the Remove-SCOMDisabledClassInstance first.
   #>
 	param(
+	# The monitoringobject to remove
 	[Parameter(ValueFromPipeline=$true)]
 	[Microsoft.EnterpriseManagement.Monitoring.MonitoringObject] $Object,
+	# When using this switch, there won't be a prompt before deletion
 	[switch] $Force
 	)
 	process{
