@@ -5,7 +5,7 @@
 
 function Copy-cSCOMSubscription
 {
-# first you must create the source and target managementgroup sessions by executing the command '$source = new-scommanagementgroupconnection sptw0212 -passthru;$target = new-scommanagementgroupconnection sptw0212 -passthru
+
 param(
     [Parameter(Mandatory=$true)]
     [ValidateNotNullOrEmpty()]
